@@ -1,0 +1,239 @@
+:root {
+  --grey1: #333;
+  --grey3: #828282;
+  --bgwhite: #FCFCFC;
+  --yellow: #EEB05F;
+  --pink: #EE609A;
+  --gradient: linear-gradient(90deg, var(--yellow) 0%, var(--pink) 100%);
+}
+
+body {
+  background-color: var(--bgwhite);
+}
+
+h0 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--grey1);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--grey1);
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--grey1);
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--grey1);
+}
+
+h4 {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--grey1);
+}
+
+h5 {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--grey1);
+}
+
+body0 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--grey3);
+}
+
+body1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--grey3);
+}
+
+
+.alignRight {
+  float: right;
+}
+
+.alignLeft {
+  float: left;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.mainTextWrap {
+  padding-top:100px;
+  padding-bottom:16px;
+}
+
+.mainText {
+  padding: 0px 117px 16px;
+  white-space: initial;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+.gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainButtonAndCV {
+  width: 336px;
+  height: 65px;
+  padding: 0px 117px;
+}
+
+.mainButtonAndCV .buttonWrapper {
+  padding-right: 31px;
+  width: 154px;
+  height: 65px;
+}
+
+.mainButtonAndCV h5 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  outline: none;
+  background-image: var(--gradient);
+  color: white;
+  position: relative;
+  letter-spacing: 1px;
+  width: 154px;
+  height: 65px;
+ }
+ 
+ .button::before {
+  content: 'Book a call';
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  /*Button's value/text-content */
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background-color: var(--grey1);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease-in-out;
+ }
+
+ .bookACall {
+  content: 'Book a call';
+ }
+ 
+ .button:hover::before {
+  top: 0;
+  left: 0;
+ }
+
+/* .button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #ebebeb 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+} */
+
+
+/* Style the links inside the navigation bar
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
