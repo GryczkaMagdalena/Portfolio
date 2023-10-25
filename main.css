@@ -9,6 +9,7 @@
 
 body {
   background-color: var(--bgwhite);
+  margin: 0px;
 }
 
 h0 {
@@ -53,11 +54,20 @@ h4 {
 
 h5 {
   font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--grey1);
+}
+
+h6 {
+  font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 700;
   line-height: 120%;
   color: var(--grey1);
 }
+
 
 body0 {
   font-family: 'Fira Sans', sans-serif;
@@ -88,13 +98,29 @@ body1 {
   display: inline-block;
 }
 
+.paddingTop {
+  padding-top: 100px;
+}
+
+.paddingHorizontal {
+  padding-right: 117px;
+  padding-left: 117px;
+}
+
+.paddingLeft {
+  padding-left: 117px;
+}
+
+.paddingRight {
+  padding-right: 117px;
+}
+
 .mainTextWrap {
-  padding-top:100px;
   padding-bottom:16px;
 }
 
 .mainText {
-  padding: 0px 117px 16px;
+  padding-bottom: 16px;
   white-space: initial;
   display: inline-block;
   overflow-wrap: break-word;
@@ -107,9 +133,10 @@ body1 {
 }
 
 .mainButtonAndCV {
-  width: 336px;
+  width: 366px;
   height: 65px;
   padding: 0px 117px;
+  position: relative;
 }
 
 .mainButtonAndCV .buttonWrapper {
@@ -118,11 +145,33 @@ body1 {
   height: 65px;
 }
 
-.mainButtonAndCV h5 {
+.mainButtonAndCV .cvWrapper {
+  width: 181px;
+  height: 65px;
   position: relative;
+}
+
+.mainButtonAndCV h5 {
+  margin: 0px;
+  padding: 10px;
+  position: absolute; 
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
+}
+
+.mainButtonAndCV .imgHelper {
+  padding-left: 8px;
+  width: 32px;
+  height: 100%;
+  position: relative;
+}
+
+.mainButtonAndCV img {
+  width: 24px;
+  height: 24px; 
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 .button {
@@ -132,7 +181,7 @@ body1 {
   position: relative;
   letter-spacing: 1px;
   width: 154px;
-  height: 65px;
+  height: 65px; 
  }
  
  .button::before {
@@ -141,7 +190,6 @@ body1 {
   font-size: 18px;
   font-weight: 300;
   line-height: 140%;
-  /*Button's value/text-content */
   position: absolute;
   top: -4px;
   left: -4px;
@@ -164,76 +212,33 @@ body1 {
   left: 0;
  }
 
-/* .button-50 {
-  appearance: button;
-  background-color: #000;
-  background-image: none;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-shadow: #ebebeb 4px 4px 0 0,#000 4px 4px 0 1px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  margin: 0 5px 10px 0;
-  overflow: visible;
-  padding: 12px 40px;
-  text-align: center;
-  text-transform: none;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
+ .myPhotoWrapper {
+  width: 100%;
+  height: 356px;
+ }
 
-.button-50:focus {
-  text-decoration: none;
-}
+ .myPhotoWrapper .photoSmaller {
+  width: 471px;
+  height: 100%;
+ }
+ 
+ .photoSmaller img{
+  width: 471px;
+  object-fit: scale-down;
+ }
 
-.button-50:hover {
-  text-decoration: none;
-}
+ .myPhotoWrapper .photoBigger {
+  max-width: 100%;
+  height: 100%;
+ }
+ 
+ .photoBigger img {
+  width: 863px;
+ }
 
-.button-50:active {
-  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-  outline: 0;
-}
-
-.button-50:not([disabled]):active {
-  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-  transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-  .button-50 {
-    padding: 12px 50px;
-  }
-} */
-
-
-/* Style the links inside the navigation bar
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-} */
-
-/* Change the color of links on hover */
-/* .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} */
-
-/* Add a color to the active/current link */
-/* .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-} */
+ .skillsHeader {
+  width: fit-content;
+  text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 45px;
+ }
