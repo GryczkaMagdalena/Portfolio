@@ -188,12 +188,19 @@ b2 {
   color: white;
   position: relative;
   letter-spacing: 1px;
-  width: 154px;
   height: 65px; 
+  width: 100%;
+ }
+ 
+ .mainButtonAndCV .button::before {
+  content: 'Book a call';
+ }
+ 
+ .projectsWrapper .button::before {
+  content: 'View all projects';
  }
  
  .button::before {
-  content: 'Book a call';
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -209,10 +216,6 @@ b2 {
   align-items: center;
   justify-content: center;
   transition: 0.15s ease-in-out;
- }
-
- .bookACall {
-  content: 'Book a call';
  }
  
  .button:hover::before {
@@ -247,7 +250,7 @@ b2 {
   object-fit:cover;
  }
 
- .skillsHeader {
+ .header {
   width: fit-content;
   text-transform: uppercase;
   padding-top: 16px;
@@ -278,6 +281,9 @@ b2 {
   list-style-type: disc;
   color: var(--grey1);
 }
+ table .paddingRight {
+  padding-right: 45px;
+ }
  
 .skillsWrapper li {
  width: fit-content;
@@ -288,6 +294,83 @@ b2 {
  width: fit-content;
    color: var(--grey1);
 }
+
+.projectsWrapper .headerWrapper {
+  width: 100%;
+  height: 97px;
+}
+
+.projectsWrapper .buttonWrapper {
+  width: 194px;
+  height: 65px;
+}
+
+.projectCarousel {
+  height: 554px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.projectCarousel .project {
+  flex: 0 0 auto;
+  width: 496px;
+  height: 100%;
+  background-color: var(--bgwhite);
+}
+
+.projectCarousel .marginRight {
+  margin-right: 45px;
+}
+
+.projectCarousel img {
+  width: 100%;
+  height: 305px;
+}
+
+.project .description {
+  padding: 32px;
+}
+
+.description h6 {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.description h4 {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.description b1 {
+  color: var(--grey1);
+}
+
+.description .viewProject {
+  width: 140px;
+  padding-top: 16px;
+  margin: 0;
+}
+
+.viewProject .imgHelper {
+  padding-left: 8px;
+  width: 32px;
+  position: relative;
+}
+
+.viewProject img {
+  width: 24px;
+  height: 24px; 
+  position: absolute;
+}
+
+.rectangle {
+  margin-top: -300px;
+  width: 100%;
+  height: 480px;
+  background-color: var(--yellow);
+}
+
  /* .tableDoForYou {
   width: 23%;
   height: 100%;
