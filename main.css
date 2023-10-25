@@ -371,6 +371,69 @@ b2 {
   background-color: var(--yellow);
 }
 
+.aboutMeWrapper .headerWrapper {
+  height: 74px;
+}
+
+.headerWrapper .smallerText {
+  padding: 16px 0;
+}
+
+.aboutMePhotos {
+  margin-top: 45px;
+  width: 100%;
+  height: 522px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+
+.aboutMePhotos .photo {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #EE609A;
+  display: grid;
+}
+
+.aboutMePhotos .photoBigger {
+  display: grid;
+  background-color: #828282;
+  grid-column-end: span 2;
+}
+ 
+.photo .photo_img {
+ width: 100%;
+ height: 245px;
+ object-fit: cover;
+}
+
+/* .upperPhotos .photo3 {
+  vertical-align: center;
+  display: inline-block;
+  width: 24.1%;
+  height: 245px;
+  background-color: #EE609A;
+}
+
+.upperPhotos .photo2 {
+  vertical-align: center;
+  display: inline-block;
+  width: 40.9%;
+  height: 245px;
+  background-color: #EE609A;
+}
+
+.upperPhotos .photo1 {
+  vertical-align: center;
+  display: inline-block;
+  width: 29.8%;
+  height: 245px;
+  background-color: #EE609A;
+} */
+
  /* .tableDoForYou {
   width: 23%;
   height: 100%;
