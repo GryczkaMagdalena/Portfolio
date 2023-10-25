@@ -151,7 +151,7 @@ body1 {
   position: relative;
 }
 
-.mainButtonAndCV h5 {
+.mainButtonAndCV h6 {
   margin: 0px;
   padding: 10px;
   position: absolute; 
@@ -218,27 +218,36 @@ body1 {
  }
 
  .myPhotoWrapper .photoSmaller {
-  width: 471px;
+  width: 33%;
   height: 100%;
  }
  
- .photoSmaller img{
-  width: 471px;
-  object-fit: scale-down;
+ .photoSmaller img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
  }
 
- .myPhotoWrapper .photoBigger {
-  max-width: 100%;
+ .myPhotoWrapper .photoBigger {  
+  width: 60%;
   height: 100%;
  }
  
  .photoBigger img {
-  width: 863px;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
  }
 
  .skillsHeader {
   width: fit-content;
   text-transform: uppercase;
   padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0px;
+ }
+
+ .skillsWrapper h2 {
+  margin: 0px;
   padding-bottom: 45px;
  }
