@@ -1,6 +1,7 @@
 :root {
   --grey1: #333;
   --grey3: #828282;
+  --grey4: #BDBDBD;
   --bgwhite: #FCFCFC;
   --yellow: #EEB05F;
   --pink: #EE609A;
@@ -226,9 +227,32 @@ b2 {
  .myPhotoWrapper {
   width: 100%;
   height: 356px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
  }
 
- .myPhotoWrapper .photoSmaller {
+
+.myPhotoWrapper .photo {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
+}
+
+.myPhotoWrapper .photoBigger {
+  display: grid;
+  grid-column-end: span 2;
+}
+ 
+.myPhotoWrapper .photo_img {
+ width: 100%;
+ height: 356px;
+ object-fit: cover;
+}
+
+ /* .myPhotoWrapper .photoSmaller {
   width: 33%;
   height: 100%;
  }
@@ -248,7 +272,7 @@ b2 {
   width: 100%;
   height: 100%;
   object-fit:cover;
- }
+ } */
 
  .header {
   width: fit-content;
@@ -394,66 +418,45 @@ b2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: #EE609A;
   display: grid;
 }
 
 .aboutMePhotos .photoBigger {
   display: grid;
-  background-color: #828282;
   grid-column-end: span 2;
 }
  
-.photo .photo_img {
+.aboutMePhotos .photo_img {
  width: 100%;
  height: 245px;
  object-fit: cover;
 }
 
-/* .upperPhotos .photo3 {
-  vertical-align: center;
-  display: inline-block;
-  width: 24.1%;
-  height: 245px;
-  background-color: #EE609A;
+.companyLogos {
+  margin-top: 45px;
+  width: 100%;
+  height: 75px;
 }
 
-.upperPhotos .photo2 {
-  vertical-align: center;
-  display: inline-block;
-  width: 40.9%;
-  height: 245px;
-  background-color: #EE609A;
+.companyLogos table {
+ width: 65%;
+ margin-left: auto;
+ margin-right: auto;
 }
 
-.upperPhotos .photo1 {
-  vertical-align: center;
-  display: inline-block;
-  width: 29.8%;
-  height: 245px;
-  background-color: #EE609A;
-} */
-
- /* .tableDoForYou {
-  width: 23%;
-  height: 100%;
-  list-style-type: disc;
-  color: var(--grey1);
- } 
-
- .tableFluent {
-  width: 18,5%;
-  height: 100%;
-  list-style-type: disc;
-  color: var(--grey1);
- } 
- 
- .skillsWrapper li {
-  width: fit-content;
-  padding-bottom: 8px;
+.companyLogos th, td {
+  padding: 0;
+  text-align: left;
+  display:table-cell;
+  vertical-align:middle;
 }
 
- .skillsWrapper b2 {
-  width: fit-content;
-    color: var(--grey1);
- } */
+.companyLogos img {
+  vertical-align:middle;
+}
+
+.companyLogos h2 {
+  margin: 0;
+  color: var(--grey4);
+  vertical-align:middle;
+}
