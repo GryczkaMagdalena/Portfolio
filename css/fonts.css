@@ -1,0 +1,80 @@
+h0 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 110%;
+    color: var(--grey1);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 110%;
+    color: var(--grey1);
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--grey1);
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--grey1);
+}
+
+h4 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--grey1);
+}
+
+h5 {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--grey1);
+}
+
+h6 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--grey1);
+}
+
+
+b0 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--grey3);
+}
+
+b1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--grey3);
+}
+
+b2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--grey3);
+}

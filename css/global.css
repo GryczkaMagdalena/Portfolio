@@ -1,0 +1,53 @@
+:root {
+    --grey1: #333;
+    --grey3: #828282;
+    --grey4: #BDBDBD;
+    --bgwhite: #FCFCFC;
+    --yellow: #EEB05F;
+    --pink: #EE609A;
+    --gradient: linear-gradient(90deg, var(--yellow) 0%, var(--pink) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bgwhite);
+    margin: 0px;
+}
+
+.alignRight {
+    float: right;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.paddingTop {
+    padding-top: 100px;
+}
+
+.paddingHorizontal {
+    padding-right: 117px;
+    padding-left: 117px;
+}
+
+.paddingLeft {
+    padding-left: 117px;
+}
+
+.paddingRight {
+    padding-right: 117px;
+}
+
+.gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

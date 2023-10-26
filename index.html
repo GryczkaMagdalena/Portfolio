@@ -7,16 +7,21 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500"
             rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-        <style>
-            iframe[iframetag] {
-               border: none;
-            }
-         </style>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/topbar.css">
     </head>
     <body>
-        <div id="iframeDiv">
-            <iframe src="./topbar.html" width=100% iframetag></iframe>
+
+        <div class="topnav">
+            <menu class="alignRight paddingRight">
+                <h5 class="alignRight">Book a call</h5>
+                <h5 class="alignRight"><a href="#projects">Projects</a></h5>
+                <h5 class="alignRight"><a href="#skills">Skills</a></h5>
+                <h5 class="alignRight"><a href="#aboutMe">About me</a></h5>
+            </menu>
+            <h1 class="paddingLeft">Magdalena Gryczka</h1>
         </div>
         <div class="mainTextWrap paddingTop paddingHorizontal">
             <h0 class="mainText">Software engineer by education, <br><span
@@ -43,14 +48,9 @@
             <figure class="photo photoBigger"> 
                 <img src="Photos/big-toresize2.png" class="photo_img" alt="*">
             </figure>
-            <!-- <div class="photoBigger alignRight">
-                <img src="Photos/big-toresize2.png" alt="*">
-            </div>
-            <div class="photoSmaller">
-                <img src="Photos/small-toresize2.png" class="inline" alt="*">
-            </div> -->
         </div>
-        <div class="skillsWrapper paddingHorizontal paddingTop">
+        <div class="paddingTop"></div>
+        <div id="skills" class="skillsWrapper paddingHorizontal">
             <h5 class="header gradient">Skills</h5>
             <h2>Design that solves problems,<br>skills that help understand
                 whole process.</h2>
@@ -95,7 +95,8 @@
                 </tr>
             </table>
         </div>
-        <div class="projectsWrapper paddingHorizontal paddingTop">
+        <div class="paddingTop"></div>
+        <div id="projects" class="projectsWrapper paddingHorizontal">
             <div class="headerWrapper">
                 <div class="inline buttonWrapper alignRight">
                     <div class="inline button">View all projects</div>
@@ -152,7 +153,8 @@
             </div>
         </div>
         <div class="rectangle"></div>
-        <div class="aboutMeWrapper paddingTop paddingHorizontal">
+        <div class="paddingTop"></div>
+        <div id="aboutMe" class="aboutMeWrapper paddingHorizontal">
             <div class="headerWrapper">
                 <div class="smallerText inline alignRight">
                     <b0>Over the past 7 years, I was working in 5 companies</b0>
@@ -197,6 +199,33 @@
                     </th>
                 </tr>
             </table>
+        </div>
+        <div class="experience">
+            <table class="tableExp paddingHorizontal">
+                <tr>
+                    <th class="thExp">
+                        <div class="educationHeader">
+                            <h3 class="alignRight">Education</h3>
+                            <img src="Photos/bookPink.svg" style="height: 36px;" alt="*">
+                        </div>
+                    </th>
+                    <th class="thExp">
+                        <div class="experienceHeader">
+                            <h3 class="alignRight">Work experience</h3>
+                            <img src="Photos/briefcasePink.svg" style="height: 36px;" alt="*">
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="educationList">
+                        <b1>EducationList</b1>
+                    </td>
+                    <td class="workExperienceList">
+                        <b1>workExperienceList</b1>
+                    </td>
+                </tr>
+            </table>
+
         </div>
         <div class="paddingTop">
 
